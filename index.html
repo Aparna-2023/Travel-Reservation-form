@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Travel Reservation</title>
+		<!-- bootstrap cdn -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="container-fluid main row justify-content-center m-0 p-0">
+			<div class="row align-content-center justify-content-center">
+				<div class="col-12 col-sm-6 rounded-4 bg-light">
+					<div class="p-1">
+						<h3 class="text-success text-center">Travel Reservation Form</h3>
+						<p class="text-start text-danger">*denotes mandatory</p>
+						<form>
+							<div class="row">
+								<div class="col-12 col-sm-6 form-floating">
+									<input
+										type="text"
+										class="form-control"
+										placeholder="First Name*"
+										id="fname"
+									/>
+									<label for="name"> First Name *</label>
+								</div>
+
+								<div class="col-12 col-sm-6 form-floating mb-1">
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Last Name*"
+										id="lname"
+									/>
+									<label for="name"> Last Name *</label>
+								</div>
+							</div>
+							<!-- name end -->
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Email *"
+								id="mail"
+							/>
+							<!-- Email end -->
+							<div>
+								<label>Select Tour Package*:</label>
+								<select class="form-select" name="tour" id="tour">
+									<option value="select">Select</option>
+									<option value="Goa">Goa</option>
+									<option value="Manali">Manali</option>
+									<option value="Agra">Agra</option>
+									<option value="Ooty">Ooty</option>
+									<option value="Kodaiklanal">Kodaikanal</option>
+								</select>
+							</div>
+							<!-- select end -->
+							<div class="row">
+								<div class="col-12 col-sm-6 form-floating">
+									<p class="mb-0">Arrival Date *:</p>
+									<input type="Date" class="form-control" id="date1" />
+								</div>
+
+								<div class="col-12 col-sm-6 form-floating">
+									<p class="mb-0">Number of persons: *</p>
+									<input type="text" class="form-control" id="persons" />
+								</div>
+							</div>
+							<p class="mb-0">What do you want to avail? *</p>
+							<div>
+								<input type="checkbox" name="Boarding" id="boarding" />
+								<label for="Boarding">Boarding</label>
+							</div>
+							<div>
+								<input type="checkbox" name="fooding" id="fooding" />
+								<label for="fooding">Fooding</label>
+							</div>
+							<div>
+								<input type="checkbox" name="Sight" id="sight" />
+								<label for="Sight">Sight seeing</label>
+							</div>
+							<div>
+								<p class="mb-0">Discount coupon code</p>
+								<input type="text" name="coupon" id="coupon" />
+							</div>
+							<div>
+								<p class="mb-0">Terms and Conditions: *</p>
+								<input type="radio" name="agree" id="agree" />
+								<label for="agree">I agree</label>
+								<input type="radio" name="agree" id="disagree" />
+								<label for="agree">I disagree</label>
+							</div>
+							<div class="row justify-content-center align-items-center pt-1">
+								<div class="col-6">
+									<input
+										class="btn btn-success"
+										type="submit"
+										value="Complete Reservation"
+										onclick="validate()"
+									/>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- container end -->
+		<!-- js cdn -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
