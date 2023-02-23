@@ -51,3 +51,6 @@ function validate() {
 		return true;
 	}
 }
+function fsubmit() {
+	alert("Form submitted successfully");
+}
